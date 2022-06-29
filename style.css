@@ -1,30 +1,36 @@
-body{
+body {
     font-family: 'Open Sans', 'sans-serif';
     margin: 0;
 }
-h1,h2{
-    font-family: 'caveat',cursive;
+
+h1, h2 {
+    font-family: 'caveat', cursive;
     font-weight: 400;
 }
-h1{
+
+h1 {
     font-size: 80px;
     margin: 0;
 }
-h2{
+
+h2 {
     font-size: 40px;
     margin-top: 0;
 }
-h3{
+
+h3 {
     margin: 0;
 }
-nav{
+
+nav {
     text-align: center;
     position: fixed;
     width: 100%;
     background-color: white;
     top: 0;
 }
-nav a{
+
+nav a {
     display: inline-block;
     margin: 5px;
     text-decoration: none;
@@ -33,13 +39,15 @@ nav a{
     text-transform: uppercase;
     color: black;
 }
+
 @media (min-width: 440px) {
-    nav a{
+    nav a {
         margin: 14px;
         font-size: 16px;
     }
 }
-header{
+
+header {
     position: relative;
     padding-top: 50px;
     text-align: center;
@@ -47,11 +55,11 @@ header{
     color: grey;
 }
 
-header h1,header h2{
+header h1, header h2 {
     color: antiquewhite;
 }
 
-.box{
+.box {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -61,46 +69,84 @@ header h1,header h2{
     overflow: hidden;
 }
 
-@media(min-width: 935px){
-    .box{
+@media (min-width: 935px) {
+    .box {
         flex-direction: row;
     }
-    h1{
-        writing-mode:vertical-lr;
+
+    h1 {
+        writing-mode: vertical-lr;
     }
 }
 
-.imgStyle{
+.imgStyle {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
 
-@media(min-width: 440px) {
-    .imgStyle{
+@media (min-width: 440px) {
+    .imgStyle {
         width: 200px;
         height: 200px;
     }
 }
-@media(min-width: 935px) {
-    .imgStyle{
+
+@media (min-width: 935px) {
+    .imgStyle {
         width: 300px;
         height: 250px;
     }
 }
-.btn{
+
+.btn {
     text-decoration: none;
     background: red;
     color: white;
     padding: 0 5px 0 5px;
 }
-@media(min-width: 440px) {
-    .btn{
+
+@media (min-width: 440px) {
+    .btn {
         padding: 10px;
     }
 }
-.download{
+
+.download {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+.work-experience {
+    padding-top: 40px;
+    background-color: #EDF2F4;
+}
+
+.work-wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 950px;
+}
+
+.job-wrapper {
+    display: block;
+    padding-bottom: 30px;
+}
+
+@media (min-width: 935px) {
+    .job-wrapper {
+        display: grid;
+        grid-template-columns:1fr 2.5fr;
+        column-gap: 30px;
+    }
+}
+h3~p{
+    margin: 0;
+}
+
+@media (min-width: 935px) {
+    .job-description p:first-of-type {
+        margin-top: 0;
+    }
 }
